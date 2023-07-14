@@ -1,28 +1,5 @@
-<ion-menu contentId="menu-content" type="overlay" side="end">
-	<ion-header>
-		<ion-toolbar>
-			<ion-title>Climbing App</ion-title>
-		</ion-toolbar>
-	</ion-header>
-	<ion-content>
-		<ion-list lines="none">
-			<ion-menu-toggle>
-				<ion-item [routerLink]="['/home']">
-					<ion-label>Home</ion-label>
-				</ion-item>
-				<ion-item [routerLink]="['/about']">
-					<ion-label>About</ion-label>
-				</ion-item>
-			</ion-menu-toggle>
-		</ion-list>
-	</ion-content>
-</ion-menu>
-
 <ion-header>
 	<ion-toolbar color="primary">
-		<ion-buttons slot="end">
-			<ion-menu-button></ion-menu-button>
-		</ion-buttons>
 		<ion-title>{{ title }}</ion-title>
 	</ion-toolbar>
 </ion-header>

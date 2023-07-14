@@ -1,0 +1,22 @@
+<app-menu></app-menu>
+
+<ion-content>
+	<ng-content></ng-content>
+</ion-content>
+
+<ion-tabs>
+	<ion-tab-bar slot="bottom">
+		<ion-tab-button [routerLink]="['/home']">
+			<ion-icon name="home-outline"></ion-icon>
+			Home
+		</ion-tab-button>
+		<ion-tab-button [routerLink]="['/betas']">
+			<ion-icon name="git-branch-outline"></ion-icon>
+			Betas
+		</ion-tab-button>
+		<ion-tab-button tab="/notes">
+			<ion-icon name="book-outline"></ion-icon>
+			Notes
+		</ion-tab-button>
+	</ion-tab-bar>
+</ion-tabs>
