@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { TabbedViewComponent } from './tabbed-view.component';
+import { NavigationTabsComponent } from './navigation-tabs.component';
 
 describe('TabbedViewComponent', () => {
-  let component: TabbedViewComponent;
-  let fixture: ComponentFixture<TabbedViewComponent>;
+  let component: NavigationTabsComponent;
+  let fixture: ComponentFixture<NavigationTabsComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TabbedViewComponent ],
+      declarations: [ NavigationTabsComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(TabbedViewComponent);
+    fixture = TestBed.createComponent(NavigationTabsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

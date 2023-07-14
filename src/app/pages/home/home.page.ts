@@ -1,14 +1,13 @@
 import {Component, EnvironmentInjector, inject} from '@angular/core';
 import {IonicModule} from '@ionic/angular';
-import {MenuComponent} from "../../components/menu/menu.component";
-import {TabbedViewComponent} from "../../components/tabbed-view/tabbed-view.component";
+import {NavigationTabsComponent} from "../../components/navigation-tabs/navigation-tabs.component";
 
 @Component({
 	selector: 'app-home',
 	templateUrl: 'home.page.html',
 	styleUrls: ['home.page.scss'],
 	standalone: true,
-	imports: [IonicModule, MenuComponent, TabbedViewComponent]
+	imports: [IonicModule, NavigationTabsComponent]
 })
 export class HomePage {
 	public environmentInjector = inject(EnvironmentInjector);

@@ -1,12 +1,23 @@
 import {Routes} from '@angular/router';
+import {NavigationTabsComponent} from "./components/navigation-tabs/navigation-tabs.component";
 
 export const routes: Routes = [
 	{
 		path: '',
-		loadChildren: () => import('./pages/home/home.routes').then((m) => m.routes),
-	},
-	{
-		path: 'betas',
-		loadComponent: () => import('./pages/betas/betas.page').then(m => m.BetasPage)
+		component: NavigationTabsComponent,
+		children: [
+			{
+				path: 'home',
+				loadComponent: () => import('./pages/home/home.page').then(m => m.HomePage)
+			},
+			{
+				path: 'betas',
+				loadComponent: () => import('./pages/betas/betas.page').then(m => m.BetasPage)
+			},
+			{
+				path: 'notes',
+				loadComponent: () => import('./pages/notes/notes.page').then(m => m.NotesPage)
+			}
+		]
 	}
 ];
